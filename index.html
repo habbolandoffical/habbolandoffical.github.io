@@ -12,13 +12,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <title>HabboLand - Returning Soon</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>HabboLand - Throwback</title>
     <style>
         body {
-            background: url("img/pattern.png") #d6d6d6 fixed;
+            background: url("img/hlbg.png") #e5e5e5 fixed;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
@@ -31,6 +28,71 @@
         video {
             margin: 20px 0;
         }
+
+        .logo {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            background: #f8f8f8;
+            padding: 5px;
+            border-radius: 3px;
+            border: 3px solid #dfdfdf;
+            outline: 1px solid #bbbbbb;
+            width: 500px;
+            min-height: fit-content;
+            margin-bottom: 20px;
+        }
+
+        .content__header {
+            height: 32px;
+            position: relative;
+            flex: 1;
+            background: url('img/pattern.png'), linear-gradient(180deg, #55b2e2 50%, #49a1cf 50%);
+            border-radius: 3px;
+            border: 1px solid #2688ba;
+            display: flex;
+            align-items: center;
+            padding-left: 10px;
+            box-shadow: inset 0px 0px 0px 1px rgba(255,255,255,0.3);
+            margin-bottom: 15px;
+        }
+        .content__header__habbo {
+            position: absolute;
+            top: 50%;
+            right: 5px;
+            transform: translateY(-50%);
+        }
+        .content__alt {
+            float: right;
+        }
+        p {
+            text-align: left;
+            font-family: Verdana;
+            font-size: 11px;
+            color: #6C6C6C;
+        }
+        a {
+            color: #5597bb;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.2s ease-in-out;
+        }
+        a:hover {
+            color: #ad5b5d;
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            align-items: center;
+            padding: 0;
+        }
+        ul {
+            list-style: none;
+        }
     </style>
 </head>
 <body>
@@ -38,11 +100,25 @@
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KQFDXHF8"
                   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-    <img src="https://media.discordapp.net/attachments/391421225458466818/1225173009417896083/Untitled-1.png?ex=66202a48&is=660db548&hm=02e73cdd45ecacf3bc1452a8c343c5dc1a8beb5f17d85178c7d534288494b503&=&format=webp&quality=lossless" />
-    <video controls autoplay>
-        <source src="img/video.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-    <b>See you soon - Devy & Ollie</b>
+
+
+<header>
+    <div class="logo">
+        <a href="/" title="HabboLand">
+            <img src="img/logo.png" title="HabboLand Logo" alt="HabboLand Logo">
+        </a>
+    </div>
+</header>
+<section>
+    <div class="content">
+        <div class="content__header">
+            <img src="img/welcome-text.png" alt="Welcome back to HabboLand" title="Welcome back to HabboLand">
+            <img loading="lazy" src="https://sandbox.habbo.com/habbo-imaging/avatarimage?figure=hr-889-48-.hd-209-8-.ch-3489-73-1408-.lg-3023-91-.sh-3068-1408-66-.ha-3620-undefined-.fa-1211-undefined-&gender=M&direction=4&head_direction=2&action=gesture=nrm&gesture=&size=s" alt="Devy123" class="content__header__habbo">
+        </div>
+        <p>
+            Welcome back to HabboLand! We're currently working on a new version of the website.</p>
+        <p>In the meantime, <a href="https://discord.gg/Vh6jSmgQRG" target="_blank" title="HabboLand Discord">you can join our Discord here</a>.</p>
+    </div>
+</section>
 </body>
 </html>
